@@ -46,15 +46,15 @@ Our roles:
 ## Setup
 
 ### Install dependencies
-Using the npm install command, install the minimalist and express. 
+Using the npm install command, install the minimist and express. 
 
 In addition to these, you must install Angular. This can be done with the following command:
 
 npm install -g @angular/cli
 
-To open the website, do the following in the command prompt:
+## Run instructions
 
-cd roll-dice
+To open the website, change directories to roll-dice. Then, type the following in the command prompt:
 
 ng serve --open
 
