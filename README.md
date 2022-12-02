@@ -1,23 +1,20 @@
 # Test Your Clairvoyance 
 
 ## Summary 
-COMP426 final project template boilerplate.
-All your code and documentation goes here.
-Change this text to be a brief description of your final project.
-Put the name of your project in the header above.
-You will change everything below to be the main technical documentation, as outlined below.
-
 This project is a game in which a user guesses what the result of a 6-sided die roll will be. 
+
 The game page has a field to enter a guess and a button to roll the die. Each time they roll,
 a success or failure message and their accuracy score will be updated and displayed in a pop-up. 
+
 Users can view their accuracy score on the settings page, which also displays their user information and allows
 them to delete their account. 
+
 The leaderboard page lists the top ten users with the highest accuracy scores. 
+
 To access the home page, which directs users to the game, settings, and leaderboard pages, users will first see a 
 login page. The login page presents instructions of the game and a place to enter their username and password. 
 If they don't have an account, they may click the create account button, which directs them to a new page
 to create an account. 
-
 
 ## First steps
 
@@ -34,28 +31,32 @@ Other steps that you will need to take after your team has accepted the assignme
 10. Use **Issues** to identify and track bugs and also to communicate about various aspects of the project.
 
 ## Team mangement
+Our roles:
+1. A review manager - (Umi) someone to review pull requests and merge or reject them and manage the related discussions
+2. A plan manager - (Maya) someone to keep an eye on the overall plan and keep the project tab/to-do list up to date
+3. A documentation manager - (Maya) someone to keep the documentation in order and identify what is missing and needs to be documented
+4. A release manager - (Umi) someone to manage the packaging and release process for your prototype package
+5. A project manager - (Maya) someone keeping track of all the moving parts and make sure that everything that needs to happen is happening.
+5. Roles for team members to take charge or different parts of the project. 
+    1. Front end lead (Mubashshir)
+    2. Back end lead (Umi)
+    3. Database lead (All of us)
+    4. Design lead (Maya)
 
-Plan to meet with your team ASAP.
-Talk through identifying roles within your team.
+## Setup
 
-Try to figure out what each of you are good at/enjoy doing and try to work out roles that incorporate that.
+### Install dependencies
+Using the npm install command, install the minimist and express. 
 
-Some basic roles you will want to consider:
+In addition to these, you must install Angular. This can be done with the following command:
 
-1. A review manager - someone to review pull requests and merge or reject them and manage the related discussions
-2. A plan manager - someone to keep an eye on the overall plan and keep the project tab/to-do list up to date
-3. A documentation manager - someone to keep the documentation in order and identify what is missing and needs to be documented
-4. A release manager - someone to manage the packaging and release process for your prototype package
-5. A project manager - someone keeping track of all the moving parts and make sure that everything that needs to happen is happening.
-5. Roles for team members to take charge or different parts of the project. Possible roles:
-    1. Front end lead
-    2. Back end lead
-    3. Database lead
-    4. Design lead
-    5. Etc.
+npm install -g @angular/cli
 
-You will notice that there are more roles than people in your group.
-That is because you will all be doing a hybrid job of managing a thing while working on other things.
+## Run instructions
+
+To open the website, change directories to roll-dice. Then, type the following in the command prompt:
+
+ng serve --open
 
 ## Assignment instructions
 
