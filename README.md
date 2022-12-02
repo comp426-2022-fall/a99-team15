@@ -4,6 +4,9 @@
 
 YOOOOOO WHAT IT DOOOOO
 
+Roses are red 
+violets are blue 
+Mub sucks at rhyming boohoo
 COMP426 final project template boilerplate.
 All your code and documentation goes here.
 Change this text to be a brief description of your final project.
