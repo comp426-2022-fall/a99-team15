@@ -3,6 +3,7 @@
 ## Summary 
 
 YOOOOOO WHAT IT DOOOOO
+Maya is a god
 
 COMP426 final project template boilerplate.
 All your code and documentation goes here.
