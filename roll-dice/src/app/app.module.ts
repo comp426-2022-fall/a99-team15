@@ -3,11 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { ProfileComponent } from './profile/profile.component';
+import { GameComponent } from './game/game.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HomePageComponent,
+    CreateAccountComponent,
+    ProfileComponent,
+    GameComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule
