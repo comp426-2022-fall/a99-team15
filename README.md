@@ -1,5 +1,3 @@
-# a99-team15
-
 # a99 Final Project
 
 ## Summary 
