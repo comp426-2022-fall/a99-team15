@@ -7,11 +7,31 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="login.component.css">
 </head>
-
 <body>
     <h1>Test your Clairvoyance!</h1>
     <h2>Log In!</h2>
+
+    <div class="username">
+      <label for="uname"><b style="font-size: 40px">Username </b></label>
+      <input style="height:30px;font-size:14pt;" type="text" placeholder="Enter Username" size="30" name="uname" required>
+    </div>  
+
+    <div class="password">
+        <label for="psw"><b style="font-size: 40px">Password </b></label>
+        <input style="height:30px;font-size:14pt;" type="password" placeholder="Enter Password" size="30" name="psw" required>
+        <!-- <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label> -->
+      
+    </div>
+    <div class="Submit">
+  
+      <button type="submit">Login</button>
+     
+    
+    </div>
 </body>
 
 </html>
