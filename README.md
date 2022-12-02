@@ -1,18 +1,21 @@
-# a99 Final Project
+# Test Your Clairvoyance 
 
 ## Summary 
-
-YOOOOOO WHAT IT DOOOOO
-Maya is a godfearing woman 
-
-Roses are red 
-violets are blue 
-Mub sucks at rhyming boohoo
 COMP426 final project template boilerplate.
 All your code and documentation goes here.
 Change this text to be a brief description of your final project.
 Put the name of your project in the header above.
 You will change everything below to be the main technical documentation, as outlined below.
+
+This project is a game in which a user guesses what the result of a die roll will be. 
+Each time they roll and guess correctly or incorrectly, their accuracy score will be updated and displayed in a pop-up. 
+Users can view their accuracy score on the settings page, which also displays their user information and allows
+them to delete their account. 
+The leaderboard page lists the top ten users with the highest accuracy scores. 
+To access the home page, which directs users to the game, settings, and leaderboard pages, users will first see a 
+login page. If they don't have an account, they may click the create account button, which directs them to a new page
+to create an account. 
+
 
 ## First steps
 
