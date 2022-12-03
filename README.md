@@ -6,12 +6,12 @@ This project is a game in which a user guesses what the result of a 6-sided die 
 The game page has a field to enter a guess and a button to roll the die. Each time they roll,
 a success or failure message and their accuracy score will be updated and displayed in a pop-up. 
 
-Users can view their accuracy score on the settings page, which also displays their user information and allows
+Users can view their accuracy score on the profile page, which also displays their user information and allows
 them to delete their account. 
 
 The leaderboard page lists the top ten users with the highest accuracy scores. 
 
-To access the home page, which directs users to the game, settings, and leaderboard pages, users will first see a 
+To access the home page, which directs users to the game, profile, and leaderboard pages, users will first see a 
 login page. The login page presents instructions of the game and a place to enter their username and password. 
 If they don't have an account, they may click the create account button, which directs them to a new page
 to create an account. 
