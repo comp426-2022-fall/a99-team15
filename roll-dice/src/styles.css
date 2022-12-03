@@ -11,8 +11,8 @@ label {
 div {
     text-align: center;
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
     display: inline-block;
     /* border: 1px solid #ccc; */
     box-sizing: border-box;
@@ -20,8 +20,8 @@ div {
 button {
         background-color: #04AA6D;
         color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
+        padding: 0.875rem 1.25rem;
+        margin: 0.5rem 0;
         border: none;
         cursor: pointer;
         width: 25%;
@@ -36,8 +36,8 @@ body{
 height: 100vh;  margin: 0;
 background: #F53844;
 background: linear-gradient(to bottom, #A88BEB 0%, #F8CEEC 100%);
-border: 2px solid #cebebe;
-box-shadow: inset 0 1px 0 #cebebe;
--webkit-box-shadow: inset 0 1px 0 #cebebe;
--moz-box-shadow: inset 0 1px 0 #cebebe;
+border: 0.125rem solid #cebebe;
+box-shadow: inset 0 0.063rem 0 #cebebe;
+-webkit-box-shadow: inset 0 0.063rem 0 #cebebe;
+-moz-box-shadow: inset 0 0.063rem 0 #cebebe;
 }
