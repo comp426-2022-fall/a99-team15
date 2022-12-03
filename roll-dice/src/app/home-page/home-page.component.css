@@ -1,3 +1,42 @@
-h2 {
-    background-color: rgb(111, 111, 167);
+#home {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+#game {
+    text-align: center;
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
+}
+#button3 {
+    transform: translateY(5rem);
+}
+
+button {
+    background: linear-gradient(to bottom, #A88BEB 0%, #F8CEEC 100%);
+    border: floralwhite;
+    padding: 2rem 1rem;
+    border-radius: 0.375rem;
+    width: 20%;
+    font-size:  1.25rem; 
+}
+
+#container{
+    text-align: center;
+    display: inline-block;
+}
+
+#button1 {
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
+    transform: translateY(5rem);
+}
+
+#button2 {
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
+    transform: translateY(5rem);
 }
