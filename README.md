@@ -40,7 +40,7 @@ Our roles:
 5. Roles for team members to take charge or different parts of the project. 
     1. Front end lead (Mubashshir)
     2. Back end lead (Umi)
-    3. Database lead (All of us)
+    3. Database lead (Umi)
     4. Design lead (Maya)
 
 ## Setup
