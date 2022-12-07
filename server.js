@@ -1,10 +1,25 @@
 import { roll } from './lib/roll.js';
 import minimist from 'minimist';
 import express from 'express';
-
+import { MongoClient } from 'mongodb';
+//const { MongoClient } = require('mongodb');
 const app = express();
 const args = minimist(process.argv.slice(2));
 const port = args.port || 5000;
+const uri = 'mongodb+srv://togekiss:togepi-togetic-468@cluster0.rinnbhn.mongodb.net/?retryWrites=true&w=majority'
+const client = new MongoClient(uri);
+
+try {
+    await client.connect();
+    console.log('connected to MongoDB');
+}
+catch (error) {
+    console.error(error);
+}
+
+
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
