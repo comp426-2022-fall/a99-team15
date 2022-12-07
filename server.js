@@ -2,16 +2,32 @@ import { roll } from './lib/roll.js';
 import minimist from 'minimist';
 import express from 'express';
 import { MongoClient } from 'mongodb';
-//const { MongoClient } = require('mongodb');
+
 const app = express();
 const args = minimist(process.argv.slice(2));
 const port = args.port || 5000;
-const uri = 'mongodb+srv://togekiss:togepi-togetic-468@cluster0.rinnbhn.mongodb.net/?retryWrites=true&w=majority'
+const username = process.env.MONGO_USERNAME;
+const password = process.env.MONGO_PASSWORD;
+const uri = `mongodb+srv://${username}:${password}@cluster0.rinnbhn.mongodb.net/Team15_Project?retryWrites=true&w=majority`
 const client = new MongoClient(uri);
 
+
+/* find()  
+    findOne()
+    
+*/
 try {
     await client.connect();
+    const db = client.db();
     console.log('connected to MongoDB');
+    const user = { "username": "Bob", "password": "password123" }
+    /* db.collection("Users").insertOne(user, function (err, res) {
+         if (err) throw err;
+         console.log("1 document inserted");
+     });
+     */
+    const res = await db.collection("Users").find({}).toArray();
+    console.log(res)
 }
 catch (error) {
     console.error(error);
