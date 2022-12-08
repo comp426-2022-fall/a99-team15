@@ -5,7 +5,9 @@ For this project, we are using the MEAN stack (MongoDB, Express.js, AngularJS, N
 ## Installs
 
 npm install -g @angular/cli
+
 cd roll-dice
+
 ng serve --open
 
 npm install mongodb
@@ -57,33 +59,32 @@ https://www.mongodb.com/docs/manual/reference/method/db.collection.find/
     3. Database lead (Umi)
     4. Design lead (Maya & Mubashshir)
 
-
 ## Pages Outline
 
 1. MUB Sign-In Page with button to “Create Account” if you don’t have one
     1. Username
     2. Password
     3. Sign-in button
-    4. Blue hyperlink **Create Account** button
+    4. Blue hyperlink **Create Account** button?
 2. Maya Home Page
     1. Three buttons directing you to profile, the game, leaderboard
-    2. Will have a home icon at top of each subpage to get back to home
+    2. Maybe will have a home icon at top of each subpage to get back to home?
 3. Umi Create Account Page
     1. First Name
     2. Last Name
     3. Email 
     4. Username
     5. Password
-4. Settings/Profile
+4. Maya Settings/Profile
     1. Allows to delete account
     2. Change username, password
-    3. View accuracy
-5. Roll Dice Game
-    1. Picture of dice 
+    3. View accuracy score?
+5. Mub Roll Dice Game
+    1. Picture of dice? 
     2. Box to enter guess
-    3. Click roll button to roll dice, changes picture
-    4. “Spot on!” Or “better luck next time” w/ updated accuracy
-    5. Include button to take you to leaderboard
+    3. Click roll button to roll dice, changes picture?
+    4. To see accuracy score, click on button which brings to a popup with updated score
+    5. Include button to take you to leaderboard?
 6. Leaderboard
     1. Refreshes page automatically to update leaderboard
     2. Displays username, accuracy score, and ranking
