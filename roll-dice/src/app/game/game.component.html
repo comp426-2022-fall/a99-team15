@@ -19,20 +19,26 @@
         </h1>
     </div>
     <div class="Accuracy">
-        <h1>Your accuracy is {{ accuracy }} percent</h1>
-        <form id="form" onsubmit="return false;">
-            <input type="text" id="userInput" />
-            <input type="submit" onclick="othername();" />
+        <h1>Your overall accuracy is {{ accuracy }} percent.</h1>
+    </div>
+
+    <div>
+        <form id="login" [formGroup]="gameForm" (ngSubmit)="click()">
+
+            <div class="username">
+                <label for="Your guess"><b style="font-size: 40px">Your Guess: </b></label>
+                <input style="height:30px;font-size:14pt;" type="text" placeholder="Enter number 1-6" size="30"
+                    name="uname" required formControlName="guess">
+            </div>
+
+            <div class="dice-roll">
+                <h1>{{ yourGuess }}</h1>
+                <h1>{{ title }}</h1>
+                <h2>{{ correctness }}</h2>
+            </div>
+            <button>Roll Dice</button>
+
         </form>
     </div>
 
-    <div>
-        <label for="Your guess"><b style="font-size: 40px">Your Guess: </b></label>
-        <input type="text" id="Your_guess" yourguess="Name" placeholder="Enter number 1-6" style="font-size: 40px">
-    </div>
-    <div>
-        <h1>{{ title }}</h1>
-        <button (click)="click()">Roll Dice</button>
-
-    </div>
 </body>

@@ -1,0 +1,4 @@
+#dice-roll {
+    display: flex;
+    flex-direction: row;
+}
