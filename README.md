@@ -41,7 +41,7 @@ Our roles:
     1. Front end lead (Mubashshir)
     2. Back end lead (Umi)
     3. Database lead (Umi)
-    4. Design lead (Maya)
+    4. Design lead (Maya & Mubashshir)
 
 ## Setup
 
@@ -58,8 +58,6 @@ To open the website, change directories to roll-dice. Then, type the following i
 
 ng serve --open
 
-## Assignment instructions
+## Future Extensions
 
-And that is about all you need to get started.
-
-Good skill and be creative!
+...
