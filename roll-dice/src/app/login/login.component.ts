@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import axios from 'axios';
 @Component({
   selector: 'app-login',
@@ -13,7 +14,8 @@ export class LoginComponent {
   })
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) {
 
   }
@@ -31,7 +33,7 @@ export class LoginComponent {
 
     if (res.status == 200) {
       console.log('it works!');
-
+      this.router.navigateByUrl('/home-page');
     }
   }
 }
