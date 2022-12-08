@@ -17,20 +17,6 @@ login page. The login page presents instructions of the game and a place to ente
 If they don't have an account, they may click the hyperlink, which directs them to a new page
 to create an account. 
 
-## First Steps
-
-Other steps that you will need to take after your team has accepted the assignment:
-
-1. Choose a license and update the LICENSE file accordingly. 
-2. Edit this README.md file and use it as the main location of your technical documentation with links out to information contained under `/docs/`.
-3. Create a `/docs/` directory for more elaborate documentation of your API, planning notes, etc.
-4. Make sure that all of your team members have access to the repository as administrators.
-5. Create a project under the **Projects** tab. Use this to manage your planning. Create a To-do list, etc. Explore the tools available and user them to manage your project.
-7. Assign team roles and include a listing of those roles in this README.md file or in another file under `/docs/`.
-8. Then put your entire development workflow in this repository.
-9. Use **Pull requests** to propose changes and incorporate them into your code from various team members. 
-10. Use **Issues** to identify and track bugs and also to communicate about various aspects of the project.
-
 ## Team Mangement
 Our communications were done through GroupMe, Zoom call meetings, and the GitHub teams pages. Our planning outline can be
 found [here](https://github.com/comp426-2022-fall/a99-team15/blob/main/docs/planning.md).
@@ -50,7 +36,7 @@ Our roles:
 ## Setup
 
 ### Install Dependencies
-Using the npm install command, install the `minimist` and `express` packages. 
+Using the npm install command, install the `minimist`, `express`, and `axios` packages. 
 
 In addition to these, you must install Angular. This can be done with the following command:
 
@@ -58,17 +44,37 @@ In addition to these, you must install Angular. This can be done with the follow
 
 ### Run Instructions
 
-To open the website, change directories to roll-dice. Then, type the following in the command prompt:
+To open the website, change directories to roll-dice in the command prompt. Then, type the following in the command prompt:
 
-`ng serve --open`
+`ng serve --open --poll=2000`
+
+Now, while this is running, open another command prompt. In the a99-team15 directory, enter the following command:
+ 
+`node server`
+
+Once these are both running, you will be able to see the site open up!
 
 ## API Specifications
-...
+### / 
+Redirects to /login
+
+### /login 
+Login page
+
+### /home-page 
+Home page that has 3 buttons to navigate
+
+### /create-account 
+Create and register your account
+### /game 
+Play game
+
+### /leaderboard 
+Look at leaderboard
 
 ## Demo Video
 Our demo video can be found [here]().
 
 ## Future Extensions
-
 In the future, we would like to update the front end by adding icons in the game, profile, and leaderboard pages which would take you back to the home page. We would like to add an animation/picture of dice when we click roll. We would also like to have a 
 functional leaderboard page which shows the top ten players with the best accuracy scores. 

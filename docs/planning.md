@@ -79,6 +79,7 @@ https://www.mongodb.com/docs/manual/reference/method/db.collection.find/
     1. Allows to delete account
     2. Change username, password
     3. View accuracy score?
+    4. Bar at top to go to other pages
 5. Mub Roll Dice Game
     1. Picture of dice? 
     2. Box to enter guess
