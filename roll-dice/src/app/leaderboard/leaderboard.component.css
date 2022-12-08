@@ -1,18 +1,20 @@
 .container {
-    font-family: arial;
-    font-size: 24px;
-    margin-left: 700px;
-    margin-right: auto;
+  font-family: arial;
+  font-size: 24px;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 
-  }
-  .popup {
-    text-align: center;
-    font-family: arial;
-    font-size: 35px;
-    margin: 25px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+}
+
+.popup {
+  text-align: center;
+  font-family: arial;
+  font-size: 35px;
+  margin: 25px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

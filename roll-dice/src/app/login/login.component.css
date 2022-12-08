@@ -1,4 +1,6 @@
- h1 {}
+ h3 {
+     color: rgb(167, 24, 24);
+ }
 
  body {
      display: flex;

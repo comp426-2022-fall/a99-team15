@@ -12,6 +12,7 @@ export class LoginComponent {
     username: '',
     password: ''
   })
+  errorMessage: string = '';
 
   constructor(
     private formBuilder: FormBuilder,
@@ -33,7 +34,12 @@ export class LoginComponent {
 
     if (res.status == 200) {
       console.log('it works!');
-      this.router.navigateByUrl('/home-page');
+      if (this.loginForm.value.username == "Bob" && this.loginForm.value.password == "password123") {
+        this.router.navigateByUrl('/home-page');
+      }
+      else {
+        this.errorMessage = 'The entered Username or Password is wrong.';
+      }
     }
   }
 }
