@@ -9,8 +9,8 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'leaderboard', component: LeaderboardComponent },
-    { path: 'create_account', component: CreateAccountComponent },
-    { path: 'homepage', component: HomePageComponent },
+    { path: 'create-account', component: CreateAccountComponent },
+    { path: 'home-page', component: HomePageComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'game', component: GameComponent },
     { path: '', redirectTo: '/login', pathMatch: 'full' }
