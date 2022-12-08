@@ -12,7 +12,42 @@
 </head>
 
 <body>
-    <h1>paragraph</h1>
+    <h1>Create Account</h1>
+    <div style="width: 50%; height: 20rem; ">
+        <form id="createAccount" [formGroup]="accountForm" (ngSubmit)="create()">
+
+            <div class="username">
+                <label for="uname"><b style="font-size: 40px">Username: </b></label>
+                <input style="height:30px;font-size:14pt;" type="text" placeholder="Enter Username" size="30"
+                    name="uname" required formControlName="username">
+            </div>
+
+            <div class="password">
+                <label for="psw"><b style="font-size: 40px">Password: </b></label>
+                <input style="height:30px;font-size:14pt;" type="password" placeholder="Enter Password" size="30"
+                    name="psw" required formControlName="password">
+                <!-- <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label> -->
+            </div>
+            <div class="confpassword">
+                <label for="confpsw"><b style="font-size: 40px">Confirm Password: </b></label>
+                <input style="height:30px;font-size:14pt;" type="password" placeholder="Confirm Password" size="30"
+                    name="confpsw" required formControlName="confpassword">
+                <!-- <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label> -->
+            </div>
+            <div class="email">
+                <label for="eml"><b style="font-size: 40px">Email: </b></label>
+                <input style="height:30px;font-size:14pt;" type="text" placeholder="Enter Email" size="30" name="eml"
+                    required formControlName="email">
+            </div>
+            <div class="Submit">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
