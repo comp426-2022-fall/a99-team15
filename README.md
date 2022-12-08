@@ -55,25 +55,26 @@ Now, while this is running, open another command prompt. In the a99-team15 direc
 Once these are both running, you will be able to see the site open up!
 
 ## API Specifications
-### / 
+### app.get('/') 
 Redirects to /login
 
-### /login 
+### app.get('/login')
 Login page
 
-### /home-page 
+### app.get('/home-page') 
 Home page that has 3 buttons to navigate
 
-### /create-account 
+### app.get('/create-account')   
 Create and register your account
-### /game 
+
+### app.get('/game')   
 Play game
 
-### /leaderboard 
+### app.get('/leaderboard ') 
 Look at leaderboard
 
 ## Demo Video
-Our demo video can be found [here]().
+Our demo video can be found [here](https://youtu.be/iHBTHuRKkMc).
 
 ## Future Extensions
 In the future, we would like to update the front end by adding icons in the game, profile, and leaderboard pages which would take you back to the home page. We would like to add an animation/picture of dice when we click roll. We would also like to have a 
