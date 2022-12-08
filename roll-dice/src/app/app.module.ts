@@ -8,6 +8,9 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { ProfileComponent } from './profile/profile.component';
 import { GameComponent } from './game/game.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +20,17 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
     CreateAccountComponent,
     ProfileComponent,
     GameComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

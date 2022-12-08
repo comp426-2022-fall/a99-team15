@@ -1,1 +1,38 @@
-<p>game works!</p>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RollDice</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="game.component.css">
+</head>
+
+<body>
+
+
+    <div class="game">
+        <h1>
+            Game
+        </h1>
+    </div>
+    <div class="Accuracy">
+        <h1>Your accuracy is {{ accuracy }} percent</h1>
+        <form id="form" onsubmit="return false;">
+            <input type="text" id="userInput" />
+            <input type="submit" onclick="othername();" />
+        </form>
+    </div>
+
+    <div>
+        <label for="Your guess"><b style="font-size: 40px">Your Guess: </b></label>
+        <input type="text" id="Your_guess" yourguess="Name" placeholder="Enter number 1-6" style="font-size: 40px">
+    </div>
+    <div>
+        <h1>{{ title }}</h1>
+        <button (click)="click()">Roll Dice</button>
+
+    </div>
+</body>

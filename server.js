@@ -2,30 +2,47 @@ import { roll } from './lib/roll.js';
 import minimist from 'minimist';
 import express from 'express';
 import { MongoClient } from 'mongodb';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+
+const loginRouter = express.Router();
 
 const app = express();
 const args = minimist(process.argv.slice(2));
-const port = args.port || 5000;
+const port = 5000;
 const username = process.env.MONGO_USERNAME;
 const password = process.env.MONGO_PASSWORD;
 const uri = `mongodb+srv://${username}:${password}@cluster0.rinnbhn.mongodb.net/Team15_Project?retryWrites=true&w=majority`
 const client = new MongoClient(uri);
 
+app.use(cors({ origin: true, credentials: true, optionsSuccessStatus: 200 }));
+//Here we are configuring express to use body-parser as middle-ware.
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    res.header("Access-Control-Allow-Headers", "Content-type,Accept,X-Custom-Header");
 
-/* find()  
-    findOne()
-    
+    if (req.method === "OPTIONS") {
+        return res.status(200).end();
+    }
+    next();
+});
+
+
+/* find(),findOne() 
 */
 try {
     await client.connect();
     const db = client.db();
     console.log('connected to MongoDB');
-    const user = { "username": "Bob", "password": "password123" }
+    const user = { "username": "Bob", "password": "password123", "email": "bob@gmail.com", "rolls": 2, "correct": 1 }
     /* db.collection("Users").insertOne(user, function (err, res) {
-         if (err) throw err;
-         console.log("1 document inserted");
-     });
-     */
+        if (err) throw err;
+        console.log("1 document inserted");
+    }); */
+
     const res = await db.collection("Users").find({}).toArray();
     console.log(res)
 }
@@ -33,46 +50,16 @@ catch (error) {
     console.error(error);
 }
 
-
-
-
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-// endpoint at '/app' should return 200 OK
-app.get('/app', (req, res) => {
-    res.status(200).send('200 OK');
-});
-
-/* endpoint '/app/roll' returns JSON for default roll
-of 2 six-sided dice one time */
-app.get('/app/roll/', (req, res) => {
-    const json_file = roll(6, 2, 1);
-    res.send(JSON.stringify(json_file));
-});
-
-app.post('/app/roll', (req, res, next) => {
-    const json_file = roll(parseInt(req.body.sides), parseInt(req.body.dice), parseInt(req.body.rolls));
-    res.status(200).send(json_file);
-});
-
-app.get('/app/roll/:sides', (req, res) => {
-    const json_file = roll(parseInt(req.params.sides), 2, 1);
-    res.send(JSON.stringify(json_file));
-});
-
-app.get('/app/roll/:sides/:dice', (req, res) => {
-    const json_file = roll(parseInt(req.params.sides), parseInt(req.params.dice), 1);
-    res.send(JSON.stringify(json_file));
-});
-
-app.get('/app/roll/:sides/:dice/:rolls', (req, res) => {
-    const json_file = roll(parseInt(req.params.sides), parseInt(req.params.dice), parseInt(req.params.rolls));
-    res.send(JSON.stringify(json_file));
-});
+loginRouter
+    .post('/', (req, res, error) => {
+        console.log(req.body);
+        res.status(200).send('200 OK');
+    });
 
 /*default api endpoint that returns 404 NOT FOUND for
 endpoints that aren't defined */
+app.use('/login', loginRouter);
+
 app.all('*', (req, res) => {
     res.status(404).send('404 NOT FOUND');
 });
