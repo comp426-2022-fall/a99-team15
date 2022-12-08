@@ -11,10 +11,11 @@
 </head>
 
 <body>
-  <h1>Test your Clairvoyance!</h1>
-  <h2>Log In!</h2>
 
-  <div style="width: 30%; height: 100px; float: left; transform: translateY(200%);">
+
+  <div style="width: 50%; height: 15rem; ">
+    <h1>Test your Clairvoyance!</h1>
+    <h2>Log In</h2>
     <form id="login" [formGroup]="loginForm" (ngSubmit)="login()">
 
       <div class="username">
@@ -27,21 +28,23 @@
         <label for="psw"><b style="font-size: 40px">Password </b></label>
         <input style="height:30px;font-size:14pt;" type="password" placeholder="Enter Password" size="30" name="psw"
           required formControlName="password">
-        <!-- <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label> -->
+        <p>Don't have an account? <a href="/create-account">Create Account</a></p>
       </div>
+
       <div class="Submit">
-        <button type="submit" href="/home-page">Login</button>
+        <button type="submit">Login</button>
       </div>
     </form>
   </div>
-  <div style="margin-left: 10%; height: 50vr ">
+  <div class="instructions">
     <h2>
-      "Test your Clairvoyance" is built to test your predictive ability against dice outcomes
-      <li>Login or create your account to begin playing</li>
-      <li>Click on the "game" tab after loging in and enter your roll guess in the text field. Click roll and see how
-        you did</li>
+      "Test your Clairvoyance" is built to test your predictive
+      ability against dice outcomes
+      <ol>
+        <li>Login or create your account to begin playing</li>
+        <li>Click on the "game" tab after logging in and enter your roll guess in the text field. Click roll and see how
+          you did </li>
+      </ol>
     </h2>
   </div>
 </body>
