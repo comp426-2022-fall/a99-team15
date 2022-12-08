@@ -2,58 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>RollDice</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="profile.component.css">
+    <meta charset="utf-8">
+    <title>RollDice</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="profile.component.css">
 </head>
 
 <body>
-    <div class = "profile">
+    <div class="profile">
+        <div id="buttons">
+            <button (click)="homeRedirect()">Home</button>
+            <button (click)="gameRedirect()">Game</button>
+            <button (click)="leaderboardRedirect()">Leaderboard</button>
+            <button (click)="loginRedirect()">Sign-Out</button>
+        </div>
         <h1>
             Profile
         </h1>
-    </div >
-    
-    <div class = "info">
+
+    </div>
+
+    <div class="info">
         <h2>
-            First Name: 
+            First Name: {{firstName}}
         </h2>
 
         <h2>
-            Last Name: 
+            Last Name: {{lastName}}
         </h2>
 
         <h2>
-            Username: 
+            Username: {{username}}
         </h2>
 
         <h2>
-            Password: 
+            Password: {{password}}
         </h2>
 
         <h2>
-            Email: 
+            Email: {{email}}
         </h2>
 
-        <div class = "accuracy">
+        <div class="accuracy">
             <h2>
-                Accuracy Score: 
+                Accuracy Score: {{accuracy}}
             </h2>
         </div>
     </div>
 
-    
+
     <h2>
-        Change Username or Password: 
+        Change Username or Password:
     </h2>
 
     <div class="change-username">
         <label for="Username"><b style="font-size: 1.5rem">Username </b></label>
-        <input style="height: 1.25rem;font-size:14pt;" type="text" placeholder="Enter New Username: " size="25" name="Username" required>
-    </div>  
+        <input style="height: 1.25rem;font-size:14pt;" type="text" placeholder="Enter New Username: " size="25"
+            name="Username" required>
+    </div>
 
     <div class="Submit-new-username">
         <button type="submit">Submit</button>
@@ -61,7 +69,8 @@
 
     <div class="change-password">
         <label for="password"><b style="font-size: 1.5rem">Password </b></label>
-        <input style="height:1.25rem;font-size:14pt;" type="password" placeholder="Enter New Password: " size="25" name="password" required>
+        <input style="height:1.25rem;font-size:14pt;" type="password" placeholder="Enter New Password: " size="25"
+            name="password" required>
     </div>
 
     <div class="Submit-new-password">
@@ -73,11 +82,11 @@
         No Longer Want To Play?
     </h2>
 
-    <div class = "delete-account">
+    <div class="delete-account">
         <button type="submit">Delete Account</button>
     </div>
 
-    
+
 
 </body>
 

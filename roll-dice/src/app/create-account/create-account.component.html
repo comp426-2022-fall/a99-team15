@@ -14,6 +14,17 @@
     <h1>Create Account</h1>
     <div style="width: 50%; height: 20rem; ">
         <form id="createAccount" [formGroup]="accountForm" (ngSubmit)="create()">
+            <div class="firstName">
+                <label for="fname"><b style="font-size: 40px">First Name: </b></label>
+                <input style="height:30px;font-size:14pt;" type="text" placeholder="Enter First Name" size="30"
+                    name="fname" required formControlName="firstName">
+            </div>
+
+            <div class="lastName">
+                <label for="lname"><b style="font-size: 40px">Last Name: </b></label>
+                <input style="height:30px;font-size:14pt;" type="text" placeholder="Enter Last Name" size="30"
+                    name="lname" required formControlName="lastName">
+            </div>
 
             <div class="username">
                 <label for="uname"><b style="font-size: 40px">Username: </b></label>

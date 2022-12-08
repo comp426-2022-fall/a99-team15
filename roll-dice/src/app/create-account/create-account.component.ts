@@ -9,6 +9,8 @@ import axios from 'axios';
 })
 export class CreateAccountComponent {
   accountForm = this.formBuilder.group({
+    firstName: '',
+    lastName: '',
     username: '',
     password: '',
     confpassword: '',

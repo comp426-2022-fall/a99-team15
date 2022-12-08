@@ -12,6 +12,10 @@ button {
 }
 
 #delete-account {
-    font-size:  1.25rem; 
+    font-size: 1.25rem;
 }
 
+#buttons {
+    background-color: rgb(221, 180, 242);
+    border-radius: 20px;
+}
